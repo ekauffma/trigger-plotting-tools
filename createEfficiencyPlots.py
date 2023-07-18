@@ -85,9 +85,7 @@ if __name__ == "__main__":
     parser.add_argument("--nbins", help="number of bins in histogram", default=25)
     parser.add_argument("--low", help="minimum value of histogram", default=0.0)
     parser.add_argument("--high", help="maximum value of histogram", default=100.0)
-    parser.add_argument("-b", "--basehist", help="name of histogram to use for comparison", default="l1eg_pt")
     
-    args = parser.parse_args()
     
     # run main
     main(args.infile_path, args.outdir, args.variable, int(args.nbins), float(args.low), float(args.high))
